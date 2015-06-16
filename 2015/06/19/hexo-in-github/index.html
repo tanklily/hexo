@@ -7,23 +7,23 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的#HexoHexo是一个node的静态博客框架。我们可以通过它来快速的建立自己的博客，node环境下的几条命令就好。
 Hexo安装首先你要有node,既然都用fekit，那么默认大家都是有靠谱的环境的。
-Hexo的官方网站： http:\/\/hexo.io/   
-对，你猜对了，这就是用本文的这">
+Hexo的官方网站： http://hexo.io/   
+对，你猜对了，这就是用本文的这个方">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 生产自己的博客 部署到github">
 <meta property="og:url" content="http://tanklily.com/2015/06/19/hexo-in-github/index.html">
 <meta property="og:site_name" content="TankJs">
 <meta property="og:description" content="首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的#HexoHexo是一个node的静态博客框架。我们可以通过它来快速的建立自己的博客，node环境下的几条命令就好。
 Hexo安装首先你要有node,既然都用fekit，那么默认大家都是有靠谱的环境的。
-Hexo的官方网站： http:\/\/hexo.io/   
-对，你猜对了，这就是用本文的这">
-<meta property="og:updated_time" content="2015-06-16T12:07:58.000Z">
+Hexo的官方网站： http://hexo.io/   
+对，你猜对了，这就是用本文的这个方">
+<meta property="og:updated_time" content="2015-06-16T13:11:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 生产自己的博客 部署到github">
 <meta name="twitter:description" content="首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的#HexoHexo是一个node的静态博客框架。我们可以通过它来快速的建立自己的博客，node环境下的几条命令就好。
 Hexo安装首先你要有node,既然都用fekit，那么默认大家都是有靠谱的环境的。
-Hexo的官方网站： http:\/\/hexo.io/   
-对，你猜对了，这就是用本文的这">
+Hexo的官方网站： http://hexo.io/   
+对，你猜对了，这就是用本文的这个方">
   
     <link rel="alternative" href="/atom.xml" title="TankJs" type="application/atom+xml">
   
@@ -83,7 +83,7 @@ Hexo的官方网站： http:\/\/hexo.io/
 		
     	<h3 id="首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的">首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的</h3><h2 id="#">#</h2><h2 id="Hexo">Hexo</h2><p>Hexo是一个node的静态博客框架。<br>我们可以通过它来快速的建立自己的博客，node环境下的几条命令就好。</p>
 <h2 id="Hexo安装">Hexo安装</h2><p>首先你要有node,既然都用fekit，那么默认大家都是有靠谱的环境的。</p>
-<p>Hexo的官方网站： http:\/\/hexo.io/   </p>
+<p>Hexo的官方网站： <a href="http://hexo.io/" target="_blank" rel="external">http://hexo.io/</a>   </p>
 <p>对，你猜对了，这就是用本文的这个方法做的网站</p>
 <p>如果你的英语足够好，接下来安装介绍之类的事情，就不用关注这里了，直接看官网比较靠谱</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
@@ -97,6 +97,16 @@ Hexo的官方网站： http:\/\/hexo.io/
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># &#36827;&#20837;&#30446;&#24405;&#10;cd nodejs-hexo&#10;&#10;# &#21551;&#21160;hexo&#26381;&#21153;&#22120;&#10;hexo server&#10;[info] Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
 <p>访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 就能看到自己的目录了</p>
 <p>不截图了。</p>
+<h3 id="创建新文章">创建新文章</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &#26032;&#30340;&#24320;&#22987;</span><br></pre></td></tr></table></figure>
+<p>这是你在目录 source/_posts 下查看<br>会有一个 新的开始.md</p>
+<p>接下来你可以编辑文件，用markdown语法写文章，然后保存</p>
+<p>markdown语法可以自己去搜一下，基本上和wiki的写法一直</p>
+<p>sublime可以安装markdown preview的插件，可以本地查看</p>
+<p>编辑完了，再执行一下hexo server,你就可以看到你新加的博客了。</p>
+<p>就是这么简单</p>
+<h3 id="静态化">静态化</h3><p>写完了文章，我们就可以发布了。<br>之前说过hexo是静态博客框架。也就是只包含html,js,css这些静态资源。<br>我们需要用一条语句去生成这些个静态资源。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="发布到github">发布到github</h2><p>在一切开始之前，你的先有一个github的账户。</p>
 
     
 	</div>
