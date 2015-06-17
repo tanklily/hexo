@@ -98,7 +98,15 @@
 <p>就是这么简单</p>
 <h3 id="静态化">静态化</h3><p>写完了文章，我们就可以发布了。<br>之前说过hexo是静态博客框架。也就是只包含html,js,css这些静态资源。<br>我们需要用一条语句去生成这些个静态资源。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<h2 id="发布到github">发布到github</h2><p>在一切开始之前，你的先有一个github的账户。</p>
+<h2 id="发布到github">发布到github</h2><p>在一切开始之前，你得先有一个github的账户。</p>
+<p>这是我的：<a href="https://github.com/tanklily" target="_blank" rel="external">https://github.com/tanklily</a></p>
+<p>在github中建立一个项目 hexo,项目地址<a href="https://github.com/tanklily/hexo" target="_blank" rel="external">https://github.com/tanklily/hexo</a></p>
+<p>在hexo的本地代码里面找 _config.yml，找到deploy的部分，设置github的项目地址</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy: &#10;  type: git &#10;  repo: git@github.com:tanklily/hexo.git</span><br></pre></td></tr></table></figure>
+<p>估计是在最后</p>
+<p>接下来就是用命令部署<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>如果你已经配置过了git的直接提交github,那么必然是没有问题的。<br>如果没有，那么必然是有问题的。</p>
+<h3 id="git_直接提交_github">git 直接提交 github</h3><p>搜之解之</p>
 
     
 	</div>

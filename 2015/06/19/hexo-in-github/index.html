@@ -17,7 +17,7 @@ Hexo的官方网站： http://hexo.io/
 Hexo安装首先你要有node,既然都用fekit，那么默认大家都是有靠谱的环境的。
 Hexo的官方网站： http://hexo.io/   
 对，你猜对了，这就是用本文的这个方">
-<meta property="og:updated_time" content="2015-06-16T13:11:24.000Z">
+<meta property="og:updated_time" content="2015-06-17T06:07:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 生产自己的博客 部署到github">
 <meta name="twitter:description" content="首先各位看到的页面就是一个Hexo做的博客，各位访问的是我自己的的域名，但是空间实际上是github的#HexoHexo是一个node的静态博客框架。我们可以通过它来快速的建立自己的博客，node环境下的几条命令就好。
@@ -106,7 +106,15 @@ Hexo的官方网站： http://hexo.io/
 <p>就是这么简单</p>
 <h3 id="静态化">静态化</h3><p>写完了文章，我们就可以发布了。<br>之前说过hexo是静态博客框架。也就是只包含html,js,css这些静态资源。<br>我们需要用一条语句去生成这些个静态资源。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<h2 id="发布到github">发布到github</h2><p>在一切开始之前，你的先有一个github的账户。</p>
+<h2 id="发布到github">发布到github</h2><p>在一切开始之前，你得先有一个github的账户。</p>
+<p>这是我的：<a href="https://github.com/tanklily" target="_blank" rel="external">https://github.com/tanklily</a></p>
+<p>在github中建立一个项目 hexo,项目地址<a href="https://github.com/tanklily/hexo" target="_blank" rel="external">https://github.com/tanklily/hexo</a></p>
+<p>在hexo的本地代码里面找 _config.yml，找到deploy的部分，设置github的项目地址</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy: &#10;  type: git &#10;  repo: git@github.com:tanklily/hexo.git</span><br></pre></td></tr></table></figure>
+<p>估计是在最后</p>
+<p>接下来就是用命令部署<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>如果你已经配置过了git的直接提交github,那么必然是没有问题的。<br>如果没有，那么必然是有问题的。</p>
+<h3 id="git_直接提交_github">git 直接提交 github</h3><p>搜之解之</p>
 
     
 	</div>
